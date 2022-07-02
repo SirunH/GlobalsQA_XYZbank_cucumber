@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//input[@class='form-control ng-valid ng-dirty ng-valid-parse ng-touched']"
-}

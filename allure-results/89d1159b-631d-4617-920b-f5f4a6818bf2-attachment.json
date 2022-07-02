@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//button[@class='btn btn-lg tab'][1]"
-}
