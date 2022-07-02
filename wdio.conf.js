@@ -17,7 +17,11 @@ exports.config = {
     connectionRetryCount: 3,
     services: ['chromedriver'],
     framework: 'cucumber',
-    reporters: ['spec', ['allure', { outputDir: 'allure-results' }]],
+    reporters: ['spec', ['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    }]],
     cucumberOpts: {
         require: ['./features/step-definitions/steps.js'],
         backtrace: false,
