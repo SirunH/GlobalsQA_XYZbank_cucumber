@@ -1,66 +1,30 @@
-# What is Webdriver.IO?
+# Testing of GlobalsQA application
+## _As bank manager we should login, create new customer and delete it_
 
-WebdriverIO is a progressive automation framework built to automate modern web and mobile applications. It simplifies the interaction with your app and provides a set of plugins that help you create a scalable, robust and stable test suite.
+GlobalsQA application we test with WebdriverIO progressive automation framework
 
-It is designed to be:
-- Extendable - Adding helper functions, or more complicated sets and combinations of  existing commands is simple and really useful
-- Compatible - WebdriverIO can be run on the WebDriver Protocol for true cross-browser testing as well as Chrome DevTools Protocol for Chromium based automation using Puppeteer.
-- Feature Rich - The huge variety of built-in and community plugins allows you to easily integrate and extend your setup to fulfill your requirements.
+### For running the test  we use JavaScript programming language
 
-You can use WebdriverIO to automate:
+_The versions that you will need to run the test_
+- WebdriverIO version 7.18.5
+- node.js version 17.8.0
+- npm version 8.5.5
 
-- 🌐   modern web applications written in React, Vue, Angular, Svelte or other frontend frameworks
-- 📱   hybrid or native mobile applications running in an emulator/simulator or on a real device
-- 💻   native desktop applications (e.g. written with Electron.js)
+** Type this command **
+
+                 npm init wdio .
+                 
+#### _For running the test from your terminal or IDE use one of this three commands_
+
+              1)   npx wdio run wdio.conf.js
+              2)   npx wdio
+              3)   npm test
 
 
-# _Getting Started_
-Follow step by step
-## Installation
-Prerequisites of the Setup Configuration
--Node. js (comes bundled with npm, i.e. Node package manager). For those comfortable with using Maven in Java, consider this to be the equivalent package manager for JS.
--Any IDE to write the code.
-
-**Step 1:Install Node.js npm**
-One can download Node.js and npm, then check that it is installed by running the following commands in the terminal.
-
-               *node -v*  (to check Node.js is installed) 
-               *npm -v* (to check npm is installed)
-Once the user has installed Node.js, they will get access to the npm, an inbuilt package manager which will be used to install Selenium for JS.
-
-**Step 2: Type **
-##### Using NPM
-If you're in the root directory of an existing project, run:
-
-                 npm init
-
-**Step 3: Type **
-
-                 npm install webdriverio
-
-**Step 4: Type **
-
-                 npm install @wdio/cli
-
-**Step 5: Type **
-
-                 npm install chai
-
-**Step 6: Type **
-
-                 npm install @faker-js/faker --save-dev
-
-**Step 7: Type **
-
-                npm init wdio .
-It will ask you questions and generate a config file for you in less than a minute.
-Answer questions are below
-
+Configurations that we use
 WDIO Configuration Helper
 =========================
 =========================
-
-
 ? Where is your automation backend located? On my local machine
 ? Which framework do you want to use? cucumber   
 ? Do you want to use a compiler? Babel (https://babeljs.io/)      
@@ -76,16 +40,13 @@ WDIO Configuration Helper
 ? Do you want me to run `npm install` Yes
 
 
-Once you have your configuration file set up, you can start your tests by running:
-
-                npx wdio run wdio.conf.js
-or 
-
-                npx wdio run wdio.
-
-
-Copy and paste "wdio run wdio.conf.js" behind the test in package,json file
-after that for running the project in terminal run   
-
-                npm test
- command
+## _In this project as a user, we should follow the steps_
+1. Navigate to https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login page
+2. Click in "Bank Manager Login"  button
+3. Click in " Add Customer " button
+4. Fill all fields with valid credentials
+5. Click on the  below " Add Customer " button
+6. Accept Alert text
+7. Click on the above "Customers" button
+8. Search newly added customer by postcode in the search field
+9. Delete newly added customer
